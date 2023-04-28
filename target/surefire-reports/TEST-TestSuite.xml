@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="TestSuite" time="6.642" tests="6" errors="0" skipped="0" failures="3">
+  <properties>
+    <property name="gopherProxySet" value="false"/>
+    <property name="awt.toolkit" value="sun.lwawt.macosx.LWCToolkit"/>
+    <property name="java.specification.version" value="11"/>
+    <property name="sun.cpu.isalist" value=""/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Users/naveenautomationlabs/Documents/Playwright-APIAutomation/target/test-classes:/Users/naveenautomationlabs/Documents/Playwright-APIAutomation/target/classes:/Users/naveenautomationlabs/.m2/repository/com/microsoft/playwright/playwright/1.32.0/playwright-1.32.0.jar:/Users/naveenautomationlabs/.m2/repository/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar:/Users/naveenautomationlabs/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/naveenautomationlabs/.m2/repository/com/microsoft/playwright/driver/1.32.0/driver-1.32.0.jar:/Users/naveenautomationlabs/.m2/repository/com/microsoft/playwright/driver-bundle/1.32.0/driver-bundle-1.32.0.jar:/Users/naveenautomationlabs/.m2/repository/org/testng/testng/7.0.0/testng-7.0.0.jar:/Users/naveenautomationlabs/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/naveenautomationlabs/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar:/Users/naveenautomationlabs/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar:/Users/naveenautomationlabs/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar:/Users/naveenautomationlabs/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar:"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://openjdk.java.net/"/>
+    <property name="user.timezone" value=""/>
+    <property name="java.vm.specification.version" value="11"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="IN"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="/Users/naveenautomationlabs/Documents/Playwright-APIAutomation/target/surefire/surefirebooter12618319534254910236.jar /Users/naveenautomationlabs/Documents/Playwright-APIAutomation/target/surefire 2023-04-18T20-50-26_891-jvmRun1 surefire1448295261199386703tmp surefire_010641274001484934661tmp"/>
+    <property name="http.nonProxyHosts" value="local|*.local| 169.254/16|*. 169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="surefire.test.class.path" value="/Users/naveenautomationlabs/Documents/Playwright-APIAutomation/target/test-classes:/Users/naveenautomationlabs/Documents/Playwright-APIAutomation/target/classes:/Users/naveenautomationlabs/.m2/repository/com/microsoft/playwright/playwright/1.32.0/playwright-1.32.0.jar:/Users/naveenautomationlabs/.m2/repository/com/google/code/gson/gson/2.8.9/gson-2.8.9.jar:/Users/naveenautomationlabs/.m2/repository/org/opentest4j/opentest4j/1.2.0/opentest4j-1.2.0.jar:/Users/naveenautomationlabs/.m2/repository/com/microsoft/playwright/driver/1.32.0/driver-1.32.0.jar:/Users/naveenautomationlabs/.m2/repository/com/microsoft/playwright/driver-bundle/1.32.0/driver-bundle-1.32.0.jar:/Users/naveenautomationlabs/.m2/repository/org/testng/testng/7.0.0/testng-7.0.0.jar:/Users/naveenautomationlabs/.m2/repository/com/beust/jcommander/1.72/jcommander-1.72.jar:/Users/naveenautomationlabs/.m2/repository/com/fasterxml/jackson/core/jackson-databind/2.14.2/jackson-databind-2.14.2.jar:/Users/naveenautomationlabs/.m2/repository/com/fasterxml/jackson/core/jackson-annotations/2.14.2/jackson-annotations-2.14.2.jar:/Users/naveenautomationlabs/.m2/repository/com/fasterxml/jackson/core/jackson-core/2.14.2/jackson-core-2.14.2.jar:/Users/naveenautomationlabs/.m2/repository/org/projectlombok/lombok/1.18.20/lombok-1.18.20.jar:"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/naveenautomationlabs"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2023-01-17"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-11.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="basedir" value="/Users/naveenautomationlabs/Documents/Playwright-APIAutomation"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.awt.graphicsenv" value="sun.awt.CGraphicsEnvironment"/>
+    <property name="surefire.real.class.path" value="/Users/naveenautomationlabs/Documents/Playwright-APIAutomation/target/surefire/surefirebooter12618319534254910236.jar"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local| 169.254/16|*. 169.254/16"/>
+    <property name="java.runtime.version" value="11.0.18+9-LTS-195"/>
+    <property name="user.name" value="naveenautomationlabs"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="13.2.1"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="US-ASCII"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="java.vendor.version" value="18.9"/>
+    <property name="localRepository" value="/Users/naveenautomationlabs/.m2/repository"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/_s/grkxq_lj10v_tqx8jd_71sl80000gn/T/"/>
+    <property name="java.version" value="11.0.18"/>
+    <property name="user.dir" value="/Users/naveenautomationlabs/Documents/Playwright-APIAutomation"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.awt.printerjob" value="sun.lwawt.macosx.CPrinterJob"/>
+    <property name="sun.os.patch.level" value="unknown"/>
+    <property name="java.library.path" value="/Users/naveenautomationlabs/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.info" value="mixed mode"/>
+    <property name="java.vm.version" value="11.0.18+9-LTS-195"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="java.class.version" value="55.0"/>
+    <property name="socksNonProxyHosts" value="local|*.local| 169.254/16|*. 169.254/16"/>
+  </properties>
+  <testcase name="createUserTest" classname="com.qa.api.tests.CreateUserWithJsonFileTest" time="0.288">
+    <failure message="expected [201] but found [401]" type="java.lang.AssertionError">java.lang.AssertionError: expected [201] but found [401]
+	at com.qa.api.tests.CreateUserWithJsonFileTest.createUserTest(CreateUserWithJsonFileTest.java:61)
+</failure>
+  </testcase>
+  <testcase name="createUserTest" classname="com.qa.api.tests.CreateUserTestWithJsonStringTest" time="0.722"/>
+  <testcase name="createUserTest" classname="com.qa.api.tests.CreateUserPostCallTest" time="0.576"/>
+  <testcase name="getHeadersTest" classname="com.qa.api.tests.APIResponseHeadersTest" time="0.293"/>
+  <testcase name="disposeResponseTest" classname="com.qa.api.tests.APIDisposeTest" time="0.457">
+    <failure message="Response has been disposed" type="com.microsoft.playwright.PlaywrightException">com.microsoft.playwright.PlaywrightException: Response has been disposed
+	at com.qa.api.tests.APIDisposeTest.disposeResponseTest(APIDisposeTest.java:67)
+</failure>
+    <system-out><![CDATA[response status code: 200
+OK
+----print api response with plain text----
+[{"id":1052432,"name":"Chandravati Arora","email":"chandravati_arora@wintheiser.example","gender":"female","status":"active"},{"id":1052431,"name":"Apsara Embranthiri","email":"embranthiri_apsara@stroman.test","gender":"male","status":"inactive"},{"id":1052430,"name":"Prof. Varalakshmi Reddy","email":"varalakshmi_reddy_prof@witting-lockman.example","gender":"female","status":"active"},{"id":1052429,"name":"Harinarayan Malik","email":"malik_harinarayan@beier-cruickshank.example","gender":"female","status":"inactive"},{"id":1052428,"name":"Shwet Kaur","email":"shwet_kaur@simonis.example","gender":"female","status":"inactive"},{"id":1052427,"name":"Meghnath Sethi","email":"sethi_meghnath@wehner-botsford.test","gender":"male","status":"inactive"},{"id":1050756,"name":"Rajinder Ganaka","email":"ganaka_rajinder@murphy.test","gender":"male","status":"active"},{"id":1050755,"name":"Bhadra Pothuvaal","email":"pothuvaal_bhadra@white.example","gender":"male","status":"inactive"},{"id":1049098,"name":"Mandakini Nehru","email":"nehru_mandakini@grant.test","gender":"male","status":"active"},{"id":1048217,"name":"The Hon. Guru Khatri","email":"hon_guru_the_khatri@connelly.test","gender":"male","status":"active"}]
+----print api response after dispose with plain text----
+api response body is disposed
+response status code after dispose: 200
+OK
+response url:https://gorest.co.in/public/v2/users
+get response body for 2nd request:
+status code:200
+repose body:{"data":{"id":2,"email":"janet.weaver@reqres.in","first_name":"Janet","last_name":"Weaver","avatar":"https://reqres.in/img/faces/2-image.jpg"},"support":{"url":"https://reqres.in/#support-heading","text":"To keep ReqRes free, contributions towards server costs are appreciated!"}}
+]]></system-out>
+  </testcase>
+  <testcase name="createUserTest" classname="com.qa.api.tests.CreateUserWithPOJOTest" time="0.216">
+    <failure message="expected [201] but found [401]" type="java.lang.AssertionError">java.lang.AssertionError: expected [201] but found [401]
+	at com.qa.api.tests.CreateUserWithPOJOTest.createUserTest(CreateUserWithPOJOTest.java:58)
+</failure>
+  </testcase>
+</testsuite>

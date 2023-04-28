@@ -1,0 +1,16 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 6, Failures: 3, Errors: 0, Skipped: 0, Time elapsed: 6.642 s <<< FAILURE! - in TestSuite
+createUserTest(com.qa.api.tests.CreateUserWithJsonFileTest)  Time elapsed: 0.288 s  <<< FAILURE!
+java.lang.AssertionError: expected [201] but found [401]
+	at com.qa.api.tests.CreateUserWithJsonFileTest.createUserTest(CreateUserWithJsonFileTest.java:61)
+
+disposeResponseTest(com.qa.api.tests.APIDisposeTest)  Time elapsed: 0.457 s  <<< FAILURE!
+com.microsoft.playwright.PlaywrightException: Response has been disposed
+	at com.qa.api.tests.APIDisposeTest.disposeResponseTest(APIDisposeTest.java:67)
+
+createUserTest(com.qa.api.tests.CreateUserWithPOJOTest)  Time elapsed: 0.216 s  <<< FAILURE!
+java.lang.AssertionError: expected [201] but found [401]
+	at com.qa.api.tests.CreateUserWithPOJOTest.createUserTest(CreateUserWithPOJOTest.java:58)
+

@@ -1,0 +1,37 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Surefire suite</th></tr>
+<tr><td><a href="#t0">Surefire test</a></td><td class="num">3</td><td class="num">0</td><td class="num">0</td><td class="num attn">3</td><td class="num">6,166</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Surefire suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Surefire test &#8212; failed</th></tr><tr class="failedeven"><td rowspan="1">com.qa.api.tests.APIDisposeTest</td><td><a href="#m0">disposeResponseTest</a></td><td rowspan="1">1681831232882</td><td rowspan="1">459</td></tr><tr class="failedodd"><td rowspan="1">com.qa.api.tests.CreateUserWithJsonFileTest</td><td><a href="#m1">createUserTest</a></td><td rowspan="1">1681831231002</td><td rowspan="1">282</td></tr><tr class="failedeven"><td rowspan="1">com.qa.api.tests.CreateUserWithPOJOTest</td><td><a href="#m2">createUserTest</a></td><td rowspan="1">1681831233342</td><td rowspan="1">216</td></tr><tr><th colspan="4">Surefire test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">com.qa.api.tests.APIResponseHeadersTest</td><td><a href="#m3">getHeadersTest</a></td><td rowspan="1">1681831232591</td><td rowspan="1">291</td></tr><tr class="passedodd"><td rowspan="1">com.qa.api.tests.CreateUserPostCallTest</td><td><a href="#m4">createUserTest</a></td><td rowspan="1">1681831232014</td><td rowspan="1">576</td></tr><tr class="passedeven"><td rowspan="1">com.qa.api.tests.CreateUserTestWithJsonStringTest</td><td><a href="#m5">createUserTest</a></td><td rowspan="1">1681831231292</td><td rowspan="1">722</td></tr></tbody>
+</table>
+<h2>Surefire test</h2><h3 id="m0">com.qa.api.tests.APIDisposeTest#disposeResponseTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">com.microsoft.playwright.PlaywrightException: Response has been disposed
+	at com.microsoft.playwright.impl.APIResponseImpl.lambda$body$0(APIResponseImpl.java:55)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.APIResponseImpl.body(APIResponseImpl.java:49)
+	at com.microsoft.playwright.impl.APIResponseImpl.text(APIResponseImpl.java:104)
+	at com.qa.api.tests.APIDisposeTest.disposeResponseTest(APIDisposeTest.java:67)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">com.qa.api.tests.CreateUserWithJsonFileTest#createUserTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [201] but found [401]
+	at com.qa.api.tests.CreateUserWithJsonFileTest.createUserTest(CreateUserWithJsonFileTest.java:61)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">com.qa.api.tests.CreateUserWithPOJOTest#createUserTest</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.AssertionError: expected [201] but found [401]
+	at com.qa.api.tests.CreateUserWithPOJOTest.createUserTest(CreateUserWithPOJOTest.java:58)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+... Removed 37 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">com.qa.api.tests.APIResponseHeadersTest#getHeadersTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">com.qa.api.tests.CreateUserPostCallTest#createUserTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">com.qa.api.tests.CreateUserTestWithJsonStringTest#createUserTest</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
