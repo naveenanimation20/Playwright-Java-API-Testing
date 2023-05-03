@@ -1,7 +1,7 @@
-package com.qa.api.tests;
+package com.qa.api.tests.POST;
 
 import com.api.data.User;
-import com.fasterxml.jackson.databind.JsonNode;
+import com.api.data.Users;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.microsoft.playwright.APIRequest;
 import com.microsoft.playwright.APIRequestContext;
@@ -15,7 +15,7 @@ import org.testng.annotations.Test;
 
 import java.io.IOException;
 
-public class CreateUserPostCallWithPOJOTest {
+public class CreateUserPotCallWithPojoLombokTest {
 
     Playwright playwright;
     APIRequest request;
@@ -45,16 +45,21 @@ public class CreateUserPostCallWithPOJOTest {
     @Test
     public void createUserTest() throws IOException {
 
-        //create user object:
-        User user = new User("Naveen", getRandomEmail(), "male", "active");
+        //create users object: using builder pattern:
+        Users users = Users.builder()
+                    .name("Naveen Automation")
+                    .email(getRandomEmail())
+                    .gender("male")
+                    .status("active").build();
 
         //POST Call: create a user
         APIResponse apiPostResponse = requestContext.post("https://gorest.co.in/public/v2/users",
                 RequestOptions.create()
                         .setHeader("Content-Type", "application/json")
-                        .setHeader("Authorization", "Bearer f4bd5cb99e27882658a2233c4ddd1e8a14f49788f92938580971a46439aa774f")
-                        .setData(user));
+                        .setHeader("Authorization", "Bearer e4b8e1f593dc4a731a153c5ec8cc9b8bbb583ae964ce650a741113091b4e2ac6")
+                        .setData(users));
 
+        System.out.println(apiPostResponse.url());
         System.out.println(apiPostResponse.status());
         Assert.assertEquals(apiPostResponse.status(), 201);
         Assert.assertEquals(apiPostResponse.statusText(), "Created");
@@ -62,21 +67,24 @@ public class CreateUserPostCallWithPOJOTest {
         String responseText = apiPostResponse.text();
         System.out.println(responseText);
 
-       //convert response text/json to POJO -- desrialization
-       ObjectMapper objectMapper = new ObjectMapper();
+        //convert response text/json to POJO -- desrialization
+        ObjectMapper objectMapper = new ObjectMapper();
         User actUser = objectMapper.readValue(responseText, User.class);
         System.out.println("actual user from the response---->");
         System.out.println(actUser);
 
 
 
-        Assert.assertEquals(actUser.getName(), user.getName());
-        Assert.assertEquals(actUser.getEmail(), user.getEmail());
-        Assert.assertEquals(actUser.getStatus(), user.getStatus());
-        Assert.assertEquals(actUser.getGender(), user.getGender());
+        Assert.assertEquals(actUser.getName(), users.getName());
+        Assert.assertEquals(actUser.getEmail(), users.getEmail());
+        Assert.assertEquals(actUser.getStatus(), users.getStatus());
+        Assert.assertEquals(actUser.getGender(), users.getGender());
         Assert.assertNotNull(actUser.getId());
 
     }
+
+
+
 
 
 }
