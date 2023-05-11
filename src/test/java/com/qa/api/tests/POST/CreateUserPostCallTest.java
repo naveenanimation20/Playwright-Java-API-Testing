@@ -94,8 +94,6 @@ public class CreateUserPostCallTest {
             Assert.assertTrue(apiGetResponse.text().contains("NaveenAuto"));
 
             Assert.assertTrue(apiGetResponse.text().contains(emailId));
-
-
     }
 
 

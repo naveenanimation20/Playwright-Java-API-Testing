@@ -112,7 +112,8 @@ public class UpdateUserPUTCallWithPOJOLombokTest {
         System.out.println("---------------GET CALL----------------");
 
         //3. Get the updates user with GET CALL:
-        APIResponse apiGETResponse = requestContext.get("https://gorest.co.in/public/v2/users/"+userId, RequestOptions.create()
+        APIResponse apiGETResponse = requestContext.get("https://gorest.co.in/public/v2/users/"+userId,
+                RequestOptions.create()
                 .setHeader("Authorization", "Bearer e4b8e1f593dc4a731a153c5ec8cc9b8bbb583ae964ce650a741113091b4e2ac6"));
 
         System.out.println(apiGETResponse.url());
